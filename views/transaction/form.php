@@ -58,7 +58,7 @@
 	<script>
 		function addTransactionDetail()
 		{
-			var t = $("#dynamicAcc").children();
+			var t = $("#dynamicAcc").html();
 			$("#transactionDetails").append(t);
 		}
 	</script>

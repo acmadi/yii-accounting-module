@@ -1,5 +1,4 @@
 <?php
-
 class AccountController extends Controller
 {
 	public function actionIndex()
@@ -53,8 +52,7 @@ class AccountController extends Controller
                 'users' => array('*'),
             ),
         );
-    }
- 
+    } 
 	public function actionAdmin(){
 		var_dump(Account::model()->findAll());
 	}

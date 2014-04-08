@@ -15,7 +15,7 @@ Semuanya tidak saya masukan karena masalah lisensi
 Cara Instalasi:
 
 1. Salin modul ke direktori module di yii
-2. Buat Direktori Accounting/assets
+2. Buat Direktori Accounting/assets/css Accounting/assets/js Accounting/assets/img
 3. Letakan file dari JQuery Treetable disana
 4. Tambahkan Accounting di config/main.php pada bagian modules 
 
@@ -25,6 +25,7 @@ Cara Instalasi:
     'Accounting'=>array(
         "params"=>array(
              "uploadPath"=>"/var/www/yii_erp/accounting/upload/",
+             uploadUrlPath"=>"/upload/", //relative Url dari direktori upload gambar
          ),
     )
 );

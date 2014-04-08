@@ -58,6 +58,15 @@ class Account extends CActiveRecord
 			"TransactionDetails"=>array($this::HAS_MANY,"TransactionDetail","account_id"),
 		);
 	}
+	public function getAllSubTransaction()
+	{
+		$myTransaction = $this->TransactionDetails;
+		foreach($this->Child as $ac)
+		{
+			$myTransaction = array_merge($myTransaction,$ac->AllSubTransaction);
+		}
+		return $myTransaction;
+	}
 	public function getBalance(){
 		$sum = 0;
 		foreach($this->TransactionDetails as $trans){

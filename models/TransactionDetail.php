@@ -57,6 +57,7 @@ class TransactionDetail extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'Transaction'=>array($this::BELONGS_TO,'Transaction','transaction_id'),
+			'Account'=>array($this::BELONGS_TO,'Account','account_id'),
 		);
 	}
 

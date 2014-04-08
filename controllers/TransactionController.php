@@ -9,7 +9,7 @@ class TransactionController extends Controller
 	}
 	public function actionView($id)
 	{
-		$model = Account::model()->findByPk($id);
+		$model = Transaction::model()->findByPk($id);
 		$this->render('view',array('model'=>$model));
 	}
 	public function actionCreate()
