@@ -25,7 +25,7 @@ Cara Instalasi:
     'Accounting'=>array(
         "params"=>array(
              "uploadPath"=>"/var/www/yii_erp/accounting/upload/",
-             uploadUrlPath"=>"/upload/", //relative Url dari direktori upload gambar
+             "uploadUrlPath"=>"/upload/", //relative Url dari direktori upload gambar
          ),
     )
 );
